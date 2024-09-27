@@ -98,40 +98,26 @@ This application has fully responsive user interface, ensuring a seamless experi
 - #### *Task Listing Screen*
 | Web | Tablet | Mobile |
 |--|--|--|
-| ![Screenshot_1720529777](https://github.com/user-attachments/assets/b3152745-25e4-40f9-a4fa-afd66a2722ee) |  ![Screenshot_1720529762](https://github.com/Danish-Git/expense_manager/assets/79436114/1bfb8ec3-9eb0-4bd2-bcfe-26e95819f264)  |  ![Screenshot_1727429493](https://github.com/user-attachments/assets/0864e3b6-5d41-4687-bd8c-3434ad3da368)  |
-
-
+| ![Screenshot_1720529777](https://github.com/user-attachments/assets/b3152745-25e4-40f9-a4fa-afd66a2722ee) |  ![Screenshot_1720529762](https://github.com/user-attachments/assets/6ea06ae9-6305-4cbc-b6d1-7f8374ba2a20)  |  ![Screenshot_1727429493](https://github.com/user-attachments/assets/0864e3b6-5d41-4687-bd8c-3434ad3da368)  |
 
 
 
 - #### *Task Filter Screen*
 | Web | Tablet | Mobile |
 |--|--|--|
-| ![Screenshot_1720529777](https://github.com/user-attachments/assets/71519b2e-c984-4ae4-840b-c4594bf37216) |  ![Screenshot_1720529762](https://github.com/Danish-Git/expense_manager/assets/79436114/1bfb8ec3-9eb0-4bd2-bcfe-26e95819f264)  |  ![Screenshot_1727429505](https://github.com/user-attachments/assets/6ba98a7e-7096-435a-a680-ea61f9fd238a)  |
-
-
+| ![Screenshot_1720529777](https://github.com/user-attachments/assets/71519b2e-c984-4ae4-840b-c4594bf37216) |  ![Screenshot_1720529762](https://github.com/user-attachments/assets/e960be9e-edb6-46e3-a491-633242e0c5a2)  |  ![Screenshot_1727429505](https://github.com/user-attachments/assets/6ba98a7e-7096-435a-a680-ea61f9fd238a)  |
 
 
 - #### *Task Detail Screen*
 | Web | Tablet | Mobile |
 |--|--|--|
-| ![Screenshot_1720529777](https://github.com/user-attachments/assets/2a09c45d-ac11-426b-9e64-80217e78c3d2) |  ![Screenshot_1720529762](https://github.com/Danish-Git/expense_manager/assets/79436114/1bfb8ec3-9eb0-4bd2-bcfe-26e95819f264)  |  
-![Screenshot_1727429549](https://github.com/user-attachments/assets/173ccddf-9956-493e-8404-8e838743c642)  |
-
+| ![Screenshot_1720529777](https://github.com/user-attachments/assets/2a09c45d-ac11-426b-9e64-80217e78c3d2) |  ![Screenshot_1720529762](https://github.com/user-attachments/assets/81090ceb-4cd8-4103-aedb-951a71f6e529)  |  ![Screenshot_1727429549](https://github.com/user-attachments/assets/173ccddf-9956-493e-8404-8e838743c642)  |
 
 
 - #### *Add / Edit Tasks Form*
 | Web | Tablet | Mobile |
 |--|--|--|
-| ![Screenshot_1720526239](https://github.com/user-attachments/assets/c8a2e5a0-5704-45dd-9437-c8e631cf24ff) | ![Screenshot_1720526463](https://github.com/Danish-Git/expense_manager/assets/79436114/e290a5fe-d088-466e-9c3e-2c218e84c7de) | ![Screenshot_1727429519](https://github.com/user-attachments/assets/833ceda8-d000-4a63-a13d-ae41dd9c1989) |
-
-<img width="1191" alt="Screenshot 2024-09-27 at 3 09 43 PM" src="https://github.com/user-attachments/assets/c8a2e5a0-5704-45dd-9437-c8e631cf24ff">
-
-
-
-
-
-
+| ![Screenshot_1720526239](https://github.com/user-attachments/assets/c8a2e5a0-5704-45dd-9437-c8e631cf24ff) | ![Screenshot_1720526463](https://github.com/user-attachments/assets/eae487f6-e6bb-43e6-9327-1c89d0952d0f) | ![Screenshot_1727429519](https://github.com/user-attachments/assets/833ceda8-d000-4a63-a13d-ae41dd9c1989) |
 
 
 
