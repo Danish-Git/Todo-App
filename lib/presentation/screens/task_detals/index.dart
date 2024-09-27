@@ -34,8 +34,7 @@ class TaskDetailView extends StatelessWidget {
             child: Container(
               constraints: const BoxConstraints(maxWidth: 500),
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Stack(
                 children: [
                   SingleChildScrollView(
                     child: Column(
@@ -135,32 +134,37 @@ class TaskDetailView extends StatelessWidget {
                             ],
                           ),
                         ),
+                        SizedBox(height: 100,)
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 20, bottom: 20),
-                    child: controller.isLoading ? Helper.showLoading() : Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        CustomButton(
-                          buttonType: ButtonType.medium,
-                          leadingIcon: Icon(Icons.delete_outline_outlined, color: EMAppTheme.themeColors.primary, size: 30),
-                          onTap: controller.deleteTask,
-                        ),
-                        CustomButton(
-                          buttonType: ButtonType.large,
-                          title: "Mark As ${controller.task?.status ?? false ? "Pending" : "Completed"}",
-                          titleColor: EMAppTheme.themeColors.primary,
-                          onTap: controller.updateTaskStatus,
-                        ),
-                        CustomButton(
-                          buttonType: ButtonType.medium,
-                          leadingIcon: Icon(Icons.edit, color: EMAppTheme.themeColors.primary, size: 30),
-                          titleColor: EMAppTheme.themeColors.primary,
-                          onTap: controller.navigateToEditForm,
-                        ),
-                      ],
+                  Align(
+                    alignment: FractionalOffset.bottomCenter,
+                    child: Container(
+                      color: EMAppTheme.themeColors.primary,
+                      padding: const EdgeInsets.only(top: 20, bottom: 20),
+                      child: controller.isLoading ? Helper.showLoading() : Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          CustomButton(
+                            buttonType: ButtonType.medium,
+                            leadingIcon: Icon(Icons.delete_outline_outlined, color: EMAppTheme.themeColors.primary, size: 30),
+                            onTap: controller.deleteTask,
+                          ),
+                          CustomButton(
+                            buttonType: ButtonType.large,
+                            title: "Mark As ${controller.task?.status ?? false ? "Pending" : "Completed"}",
+                            titleColor: EMAppTheme.themeColors.primary,
+                            onTap: controller.updateTaskStatus,
+                          ),
+                          CustomButton(
+                            buttonType: ButtonType.medium,
+                            leadingIcon: Icon(Icons.edit, color: EMAppTheme.themeColors.primary, size: 30),
+                            titleColor: EMAppTheme.themeColors.primary,
+                            onTap: controller.navigateToEditForm,
+                          ),
+                        ],
+                      ),
                     ),
                   )
                 ],

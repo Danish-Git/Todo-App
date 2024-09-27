@@ -1,6 +1,7 @@
 import 'package:esferasoft/data/models/data_models/task.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../../app/routes/routes.dart';
 import '../../../screens/home/index.dart';
 import '../bottom_sheet/index.dart';
 
@@ -25,14 +26,8 @@ class ResponsiveScaffoldController extends GetxController with GetSingleTickerPr
   ///   [addExpense] method is used to add expense, This method is used only in
   ///   case of tablet view where user can clicks on add expense button available in menu items
   Future<void> addExpense(bool isMobile) async {
-    TaskModel? expense = await getBottomSheet(
-      isMobile: isMobile,
-      child: const HomeView(),
-    );
-
-    if(expense != null) {
-      refresh();
-    }
+    var result = await Get.toNamed(Routes.taskForm);
+    if(result is TaskModel) refresh();
   }
 
 }

@@ -40,8 +40,7 @@ class TaskFormView extends StatelessWidget {
             child: Container(
               constraints: const BoxConstraints(maxWidth: 500),
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              child: Stack(
                 children: [
                   SingleChildScrollView(
                     child: Form(
@@ -139,19 +138,28 @@ class TaskFormView extends StatelessWidget {
                               ],
                             ),
                           ),
+                          SizedBox(height: 100,)
                         ],
                       ),
                     ),
                   ),
-                  controller.isLoading ? Helper.showLoading() : Padding(
-                    padding: const EdgeInsets.only(top: 20, bottom: 20),
-                    child: CustomButton(
-                      buttonType: ButtonType.large,
-                      title: "Save",
-                      titleColor: EMAppTheme.themeColors.primary,
-                      onTap: controller.validateForm,
+                  Align(
+                    alignment: FractionalOffset.bottomCenter,
+                    child: Container(
+                      color: EMAppTheme.themeColors.primary,
+                      padding: const EdgeInsets.only(top: 20, bottom: 20),
+                      child: controller.isLoading ? Helper.showLoading() : Padding(
+                        padding: const EdgeInsets.only(top: 20, bottom: 20),
+                        child: CustomButton(
+                          buttonType: ButtonType.large,
+                          title: "Save",
+                          titleColor: EMAppTheme.themeColors.primary,
+                          onTap: controller.validateForm,
+                        ),
+                      ),
                     ),
                   )
+
                 ],
               ),
             ),
