@@ -6,10 +6,9 @@
 
 1.  [Introduction](#introduction)
 2.  [Code Architecture](#code-architecture)
-3.  [Database Structure](#database-structure)
-4.  [App Flow Chart](#app-flow-chart)
-5.  [Installation](#installation)
-6.  [Features](#features-of-the-application)
+3.  [App Flow Chart](#app-flow-chart)
+4.  [Installation](#installation)
+5.  [Features](#features-of-the-application)
 
 ##
 ## Introduction
@@ -31,13 +30,6 @@ Clean architecture revolves around separating code into layers, each with a dist
 
 
 <img width="668" alt="Screenshot 2024-07-09 at 8 34 10 PM" src="https://github.com/Danish-Git/expense_manager/assets/79436114/582df4ac-28a1-41d3-a8f2-b19622f3599d">
-
-##
-## Database Structure
-
-The application uses SQLite for data storage. Below is the structure of the database:
-
-<img width="727" alt="Screenshot 2024-07-09 at 9 09 36 PM" src="https://github.com/Danish-Git/expense_manager/assets/79436114/e21577a2-1775-41a9-a754-6de0511eae28">
 
 ##
 ## App Flow Chart
