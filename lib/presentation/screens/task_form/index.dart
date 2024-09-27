@@ -145,17 +145,20 @@ class TaskFormView extends StatelessWidget {
                   ),
                   Align(
                     alignment: FractionalOffset.bottomCenter,
-                    child: Container(
+                    child: controller.isLoading ? Helper.showLoading() : Container(
                       color: EMAppTheme.themeColors.primary,
                       padding: const EdgeInsets.only(top: 20, bottom: 20),
-                      child: controller.isLoading ? Helper.showLoading() : Padding(
-                        padding: const EdgeInsets.only(top: 20, bottom: 20),
-                        child: CustomButton(
-                          buttonType: ButtonType.large,
-                          title: "Save",
-                          titleColor: EMAppTheme.themeColors.primary,
-                          onTap: controller.validateForm,
-                        ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          CustomButton(
+                            buttonType: ButtonType.large,
+                            title: "Save",
+                            titleColor: EMAppTheme.themeColors.primary,
+                            onTap: controller.validateForm,
+                          ),
+                        ],
                       ),
                     ),
                   )

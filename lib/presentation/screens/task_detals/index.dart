@@ -140,10 +140,10 @@ class TaskDetailView extends StatelessWidget {
                   ),
                   Align(
                     alignment: FractionalOffset.bottomCenter,
-                    child: Container(
+                    child: controller.isLoading ? Helper.showLoading(color: EMAppTheme.themeColors.warning) : Container(
                       color: EMAppTheme.themeColors.primary,
                       padding: const EdgeInsets.only(top: 20, bottom: 20),
-                      child: controller.isLoading ? Helper.showLoading() : Row(
+                      child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           CustomButton(

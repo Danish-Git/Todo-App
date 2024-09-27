@@ -45,10 +45,10 @@ class TaskFormViewController extends GetxController {
       descriptionInput.text = task?.description ?? "";
       priority = double.parse(task?.priority?.toString() ?? "0");
       selectedDate = DateTime.parse(task?.deadLine ?? "");
-      setDateInput();
       taskStatus = task?.status;
-      setTaskStatusInput();
     }
+    setDateInput();
+    setTaskStatusInput();
     update();
   }
 
@@ -111,6 +111,7 @@ class TaskFormViewController extends GetxController {
   ///   method is used in both adding and editing case
   Future<void> saveTask() async {
     try {
+      toggleIsLoading();
       Map<String, dynamic> params = {
         "user_id": 1,
         "title": titleInput.text,

@@ -43,12 +43,12 @@ class Helper {
   }
 
   ///   [showLoading] method returns UI component to represent loading
-  static Widget showLoading() => Column(
+  static Widget showLoading({Color? color }) => Column(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
     children: [
       SpinKitFadingCircle(
-        color: EMAppTheme.themeColors.base,
+        color: color ?? EMAppTheme.themeColors.base,
         size: 80,
       ),
     ],
